@@ -1,0 +1,11 @@
+<mat-drawer-container class="sidenav-container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+      <p>Flow Checker</p>
+    </mat-drawer>
+  
+    <mat-drawer-content>
+        <button mat-raised-button (click)="drawer.toggle()">〓</button>
+        <app-grid></app-grid>
+    </mat-drawer-content>
+  
+  </mat-drawer-container>
