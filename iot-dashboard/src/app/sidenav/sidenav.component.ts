@@ -13,12 +13,13 @@ export class SidenavComponent implements OnInit {
   constructor() { }
 
   pageInfo : Pageinfo;
+  navItems : string[] = ['Flow Checker'];
 
   ngOnInit(): void {
     this.pageInfo = new Pageinfo("Default Title");
   }
 
-  selectNav(selectedOptions:SelectionModel<MatListOption>) {
-    this.pageInfo = new Pageinfo(selectedOptions.);
+  selectNav(navTitle:string) {
+    this.pageInfo = new Pageinfo(navTitle);
   }
 }

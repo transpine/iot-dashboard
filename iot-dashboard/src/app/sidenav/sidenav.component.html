@@ -1,13 +1,9 @@
 <mat-drawer-container class="sidenav-container" autosize>
     <mat-drawer #drawer class="sidenav" mode="side">
-      <!-- <p>Flow Checker</p> -->
-      <!-- <mat-selection-list #shoes [multiple]="false"> -->
-      <mat-selection-list #navList [multiple]="false" (click)="selectNav(navList.selectedOptions)">
-        <!-- <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe"> -->
-          <!-- {{shoe}} -->
-        <!-- </mat-list-option> -->
-        <mat-list-option>Flow Checker</mat-list-option>
-        <mat-list-option>Futher More</mat-list-option>
+      <mat-selection-list #navList [multiple]="false" (click)="selectNav(navList.selectedOptions.selected[0]?.value)">
+        <mat-list-option *ngFor="let navItem of navItems" [value]="navItem">
+          {{navItem}}
+        </mat-list-option>
       </mat-selection-list>
     </mat-drawer>
   
