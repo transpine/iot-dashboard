@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
+import { Pageinfo } from '../models/pageinfo.model';
 
 @Component({
   selector: 'app-grid',
@@ -9,6 +10,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./grid.component.scss']
 })
 export class GridComponent implements OnInit {
+
+  @Input() pageInfo : Pageinfo;
 
   constructor(private breakpointObserver: BreakpointObserver) {}
   cards$: Observable<Object>;

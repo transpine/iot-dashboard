@@ -13,6 +13,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { GridComponent } from './grid/grid.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     MatIconModule,
     MatButtonModule,
     LayoutModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
