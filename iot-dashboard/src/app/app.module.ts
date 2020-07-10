@@ -15,11 +15,17 @@ import { GridComponent } from './grid/grid.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatListModule } from '@angular/material/list';
 
+import { HttpClientModule } from '@angular/common/http';
+import { EventListComponent } from './grid/event-list/event-list.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
 @NgModule({
   declarations: [
     AppComponent,
     GridComponent,
     SidenavComponent,
+    EventListComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +38,10 @@ import { MatListModule } from '@angular/material/list';
     MatButtonModule,
     LayoutModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

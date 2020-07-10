@@ -22,7 +22,7 @@ export class GridComponent implements OnInit {
       map(({ matches }) => {
         if (matches) {
           return [
-            { title: 'Card 1', cols: 1, rows: 1 },
+            { title: 'Event List', cols: 1, rows: 1 },
             // { title: 'Card 2', cols: 1, rows: 1 },
             // { title: 'Card 3', cols: 1, rows: 1 },
             // { title: 'Card 4', cols: 1, rows: 1 }
@@ -30,7 +30,7 @@ export class GridComponent implements OnInit {
         }
 
         return [
-          { title: 'Card 1', cols: 2, rows: 1 },
+          { title: 'Event List', cols: 2, rows: 1 },
           // { title: 'Card 2', cols: 1, rows: 1 },
           // { title: 'Card 3', cols: 1, rows: 2 },
           // { title: 'Card 4', cols: 1, rows: 1 }
