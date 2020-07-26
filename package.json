@@ -1,0 +1,23 @@
+{
+  "name": "iot-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node_modules/.bin/json-server.cmd --host 192.168.1.13 --watch --id time db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transpine/iot-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/transpine/iot-dashboard/issues"
+  },
+  "homepage": "https://github.com/transpine/iot-dashboard#readme",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  }
+}
